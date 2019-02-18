@@ -97,7 +97,7 @@ router.post('/editar', fileUploader.single('imagen'), async function(req, res){
 
 } catch (error) {
      console.log(error)
-    res.status(500).json({exitoso: false})
+    res.status(500).json({exitoso: false, error})
 }
 })
 
