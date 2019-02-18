@@ -80,7 +80,7 @@ router.post('/editar', fileUploader.single('imagen'), async function(req, res){
     
     try {
         const qryEditar=
-        `Update Productos Set 
+        `Update productos Set 
             nombre = :nombre, 
             Modelo = :modelo,
             tipoProductoId = :tipoProductoId, 
